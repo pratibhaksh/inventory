@@ -1,1 +1,345 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+// removed dilaog mat container dialgo
+.mat-dialog-container {
+      padding:0px!important;
+      background: none;
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-infix {
+  font-size: 13px;
+  font-weight: 600;
+  color: #061f37;
+}
+
+::ng-deep .mat-progress-bar-fill::after {
+    background-color: #69cdfe !important;
+}
+// ::ng-deep .TableforHover tr:hover{
+//    background-color: rgba(9,152,203,0.15) !important;
+// }
+::ng-deep .mat-form-field {
+ color: #061F37;
+  font-weight: 600;
+  font-size: 13px !important;;
+    font-family: "Open Sans" !important;
+}
+::ng-deep.mat-menu-item{
+  line-height: 0px !important;
+  
+}
+  /* underline border color on focused */
+  ::ng-deep .mat-focused .mat-form-field-underline .mat-form-field-ripple{
+    background-color: green !important;
+  }
+  
+  
+  //mat-input focused color
+  ::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+    color: #061f37 !important;
+  }
+
+  ::ng-deep.mat-form-field-appearance-outline .mat-form-field-prefix,
+.mat-form-field-appearance-outline .mat-form-field-suffix {
+  color: #0b1f37;;
+}
+  
+  ::ng-deep .no-line .mat-form-field-underline {
+    display: none !important;
+  }
+
+
+
+.mat-paginator-range-label {
+    padding: 0 1rem;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.54);
+    border-radius: 4px;
+    background: transparent;
+  }
+  .mat-paginator {
+    background: none;
+    cursor: pointer;
+  }
+  // its showing range of pages no need so hide it
+  ::ng-deep .mat-paginator-range-label {
+    display: none;
+    margin: 0 0px 0 0px;
+  }
+  
+  ::ng-deep .mat-paginator-range-actions {
+    // display: flex;
+    // align-items: center;
+   
+  }
+
+  ::ng-deep.mat-drawer-container {
+    background-color: #ffffff;
+   
+}
+  ::ng-deep.mat-form-field-appearance-outline .mat-form-field-prefix,
+  .mat-form-field-appearance-outline .mat-form-field-suffix {
+   
+    color: #061f37;
+  }
+
+  ::ng-deep .mat-menu-content {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+  
+  .threeDots:hover{
+       opacity: 0.5;
+    background-color: #DCE0E2;
+  }
+
+ ::ng-deep .mat-menu-panel {
+   
+    min-height: 39px !important;
+}
+  .mat-menu-item:hover{
+    background-color: #eef1f2;
+  }
+
+  ::ng-deep.mat-primary .mat-option.mat-selected:not(.mat-option-disabled) {
+    color:  #061f37 !important;
+}
+  
+  ::ng-deep .mat-checkbox-checked .mat-checkbox-background,
+  ::ng-deep .mat-checkbox-indeterminate .mat-checkbox-background {
+    background-color: #061f37 !important;
+  }
+  
+  
+  ::ng-deep .mat-input-element::placeholder {
+    color: #061f37 !important;;
+  }
+
+ 
+    ::ng-deep.mat-paginator-range-actions {
+box-sizing: border-box;
+    height: 30px;
+    border: 1px solid #DCE0E2;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    padding: 8px 8px;
+
+  }
+     ::ng-deep.mat-icon-button {
+  
+    width: 40px !important;
+  
+}
+  /* input color class */
+  // ::ng-deep input.mat-input-element {
+  //   color: #484a4c;
+  // }
+  
+  /* Change label color on focused */
+  ::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
+    color: #061f37 !important;
+  }
+  
+  /* underline border color on focused */
+  ::ng-deep .mat-focused .mat-form-field-underline .mat-form-field-ripple{
+    background-color: #061f37 !important;
+  }
+  
+  
+  //mat-input focused color
+  ::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+    color: #061f37 !important;
+  
+  }
+  ::ng-deep.mat-paginator-navigation-previous {
+    order: 0;
+  }
+  ::ng-deep.mat-paginator-navigation-next {
+    order: 1;
+  }
+
+  
+  // mat-label normal state style
+  ::ng-deep .mat-form-field-label {
+    color: rgba(0,0,0,.6)!important;
+    // color: $mainColor!important;
+  }
+  
+  // mat-label focused style
+  ::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
+    color: red!important;
+  }
+  
+  // mat-label error style
+  ::ng-deep .mat-form-field.mat-form-field-invalid .mat-form-field-label {
+    color: red!important;
+  }
+  // overwrite the ripple overlay on hover and click
+  ::ng-deep
+    .mat-checkbox:not(.mat-checkbox-disabled)
+    .mat-checkbox-ripple
+    .mat-ripple-element {
+    background-color: #061f37 !important;
+  }
+
+  
+::ng-deep mat-select {
+    display: inline-block;
+    width: 100%;
+    // outline: auto!important;
+    padding:  7px;
+    width: 45px;
+    color: none;
+  }
+
+// teaxtarea reszi icon remvoed
+
+
+//   common pagination style with not record found
+
+
+.component-pagination {
+    list-style: none;
+    padding: 3px 0px 3px;
+    border: 1px solid #dce0e2;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    border-radius: 5px;
+    height: 22px;
+    margin-top: -4px;
+    .pagination-number.current-number {
+      color: #061f37;
+    }
+    .pagination-number {
+      color: #dce0e2;
+    }
+  
+    li {
+      display: inline-block;
+      margin: 0;
+      transition: 0.15s ease-in;
+      cursor: pointer;
+    }
+  
+    .pagination-number {
+      font-size: 13px;
+      text-align: center;
+      line-height: 24px;
+      min-width: 20px;
+      padding: 8px 0;
+    }
+    .pagination-arrow {
+      line-height: 1.6;
+    }
+  }
+  
+  .mainpagi {
+    display: flex;
+    align-items: baseline;
+    select {
+      border-radius: 5px;
+      color: #061f37;
+      border: 1px solid #dce0e2;
+      height: 29px;
+      padding: 2px 0px 1px 3px;
+      margin: -5px 0px 0px 5px;
+      option:hover {
+        background-color: red;
+      }
+    }
+  
+    div {
+        height: 52px;
+    // width: 61px;
+    color: #061F37;
+    font-family: 'Open Sans';
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0;
+    }
+    display: flex;
+
+  
+  }
+
+  ::ng-deep .mat-paginator-page-size-label {
+      position: relative;
+    top: 0px;
+    left: 37px;
+}
+  ::ng-deep .mat-select-value-text {
+    // color: #061F37;
+    font-family: "Open Sans";
+    font-weight: 600;
+    line-height: 1;
+    vertical-align: middle;
+    padding: 3px;
+    font-size: 13px;
+    margin-left: 5px;
+}
+  ::ng-deep .mat-paginator-page-size-label {
+  
+    font-size: 13px !important;;
+    color: #061F37 !important;;
+    font-family: "Open Sans", sans-serif !important;;
+}
+.mainpagi .result{
+  font-size: 13px !important;;
+  color: #061F37 !important;;
+  font-family: "Open Sans", sans-serif !important;;
+}
+  .nodatafound {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "open sans";
+  }
+ 
+  ::ng-deep.mat-paginator-page-size {
+      display: flex;
+    align-items: baseline;
+    margin-left: -88px !important;
+    margin-right: 98px !important;
+  }
+  ::ng-deep.mat-mini-fab{
+       box-shadow: none !important;
+    // width: 19px;
+}
+ ::ng-deep .mat-paginator-navigation-next{
+    background-color: rgba(255, 255, 255, 0);
+    color: gray;
+    margin: -12px !important;
+    line-height: inherit !important;
+}
+::ng-deep .mat-paginator-navigation-previous{
+    background-color: rgba(255, 255, 255, 0);
+    color: gray;
+    margin: -12px !important;
+    line-height: inherit !important;
+}
+
+  ::ng-deep  .mat-mini-fab{
+background-color: #ffffff00 !important;
+  }
+
+
+  ::ng-deep .mat-paginator-icon {
+    width: 22px !important;
+    fill: currentColor;
+   
+}
+
+  ::ng-deep .mat-form-field .mat-select.mat-select-invalid .mat-select-arrow {
+    color: #061625 !important;
+    
+}
+
+// not select fab btn color override here
+
+// ::ng-deep.mat-flat-button, .mat-raised-button, .mat-fab, .mat-mini-fab {
+//   color:yellow!important;;
+ 
+// }

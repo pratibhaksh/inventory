@@ -1,0 +1,11 @@
+{
+  "inventory": [
+    {
+      "id": 1,
+      "name": "testdone",
+      "email": "test@email.com",
+      "description": "test",
+      "price": "233"
+    }
+  ]
+}

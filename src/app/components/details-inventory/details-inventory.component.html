@@ -1,0 +1,25 @@
+<!-- {{ dataSource | json }} -->
+<div *ngFor="let testb of dataSource">
+  <div *ngIf="testb.id == seletcedData">
+    <table>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Description</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td>{{ testb.id }}</td>
+        <td>{{ testb.name }}</td>
+        <td>{{ testb.email }}</td>
+        <td>{{ testb.description }}</td>
+        <td>{{ testb.price }}</td>
+      </tr>
+    </table>
+  </div>
+</div>
+<br />
+<button mat-menu-item (click)="backTo()" class="fontFamily">
+  Back to home
+</button>
